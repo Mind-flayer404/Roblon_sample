@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1d1d1b;
+    height: 950vh;
+    box-sizing: border-box;
+}
+
+/* ############################################### header ############################################################### */
+
+li{
+    list-style: none;
+}
+
+.hamburger-menu input[type="checkbox"]{
+    width: 32px;
+    height: 32px;
+}
+
+.menu-items{
+    display: none;
+}
+
+
+.hamburger-menu input[type="checkbox"]:checked ~.menu-items{
+    display: block;
+}
+
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1b;
+}
+
+header .logo
+{
+    width: 120px;
+    height: 100px;
+    background: url(Assets/logo.svg);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+header ul{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover, header .hamburger-menu li a:hover{
+    color: #ffd305;
+} 
+
+.design img{
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+.slideshow-container{
+    background-color: #1d1d1b;
+}
+
+.slideshow-container img{
+    margin-top: 125px;
+    margin-left: 125px;
+    width: 90vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* .mySlides{
+    display: none;
+}  */
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    right: 1100px;
+    width: auto;
+    padding: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 1000px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-container .text{
+    color: #1d1d1b;
+    background-color: #ffd305;
+    position: absolute;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+.active{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* ################################################## mid ############################################################ */
+
+.text-wrapper{
+    width: 100%;
+    margin-top: 200px;
+    color: white;
+}
+
+.text-wrapper .box1{
+    float: left;
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+}
+
+.text-wrapper .box2{
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: 500px;
+}
+
+.heading1{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+    color: #1d1d1b;
+}
+
+.wrapper{
+    position: absolute;
+    background-image: url(Assets/front.jpg);
+    width: 100%;
+    background-position: center;
+}
+
+.area1,.area2{
+    color: white;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.area1 .img1{
+    float: left;
+    background-image: url(Assets/mountains.jpg);
+    width: 60%;
+    height: 600px;
+    margin-left: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.area1 .img2{
+    float: right;
+    background-image: url(Assets/cable.jpg);
+    width: 33%;
+    height: 600px;
+    margin-right: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.area2 .img3{
+    float: left;
+    background-image: url(Assets/windmill.jpg);
+    width: 29%;
+    height: 600px;
+    margin-left: 25px;
+    margin-top: 35px;
+    background-position: center;
+    background-size: cover;
+}
+
+.area2 .img4{
+    float: left;
+    background-image: url(Assets/off-shore.jpg);
+    width: 29%;
+    height: 600px;
+    margin-top: 35px;
+    margin-left: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.area2 .img5{
+    float: right;
+    background-image: url(Assets/worker.jpg);
+    width: 33%;
+    height: 600px;
+    margin-right: 25px;
+    margin-top: 35px;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper2{
+    background-color: #ffd305;
+    width: 87%;
+    position: relative;
+    margin-top: 2300px;
+    margin-left: 25px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    opacity: 0.8;
+}
+
+.wrapper2 .heading2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #1d1d1b;
+}
+
+.wrapper2 .para2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    color: #1d1d1b;
+    font-weight: 700;
+}
+
+.wrapper3{
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 25px;
+    color: white;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.wrapper3 .heading3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+}
+
+.wrapper3.para3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.area3{
+    padding: 25px;
+}
+
+.area3 .img6{
+    float: left;
+    background-image: url(Assets/mountain.jpg);
+    width: 47%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.area3 .img7{
+    float: right;
+    background-image: url(Assets/machine.jpg);
+    width: 47%;
+    height: 400px;
+    margin-right: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper4{
+    background-color: #ffd305;
+    width: 87%;
+    position: relative;
+    margin-top: 800px;
+    margin-left: 25px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.wrapper4 .heading4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #1d1d1b;
+}
+
+.wrapper4 .para4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    color: #1d1d1b;
+    font-weight: 700;
+}
